@@ -1,0 +1,7 @@
+.navbar-button-top{
+    background:none;
+    padding: 10px 10px;
+    border: 2px solid var(--color-border-button);
+    border-radius: 10px;
+    margin: 5% 15%;
+}

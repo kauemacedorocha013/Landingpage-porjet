@@ -1,0 +1,47 @@
+:root{
+    /* titulo */
+    --color-title-navbar:#3b64d2;
+    /* navbar */
+    --color-links-navbar:#405263;
+    --color-links-navbar-houver:#40a1da;
+    --color-background-navlinks:#ffffff;
+    /* icone hamburger */
+    --color-menu-hamburger:#40a1da;
+    /* botão get started */
+    --color-text-button:#40a1da;
+    --color-backgorund-button-top:#ffffff;
+    --color-border-button:#40a1da;
+    --color-backgroundbutton-top-houver:#1e90ff;
+    --color-text-button-hover:#ffffff;
+}
+
+.navbar-title{
+    color:var(--color-title-navbar);
+}
+
+.navbar-list-links li a{
+    color: var(--color-links-navbar);
+}
+
+.icon-hamburger{
+    color: var(--color-menu-hamburger);
+}
+
+.navbar-container-links{
+    background-color: var(--color-background-navlinks);
+}
+
+.navbar-list-links li a:hover{
+    color: var(--color-links-navbar-houver);
+}
+
+.navbar-button-top{
+    color: var(--color-text-button);
+    background-color: var(--color-backgorund-button-top);
+}
+
+.navbar-button-top:hover{
+    border-color:var(--color-backgroundbutton-top-houver);
+    background-color: var(--color-backgroundbutton-top-houver);
+    color: var(--color-text-button-hover);
+}
