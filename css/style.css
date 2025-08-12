@@ -25,29 +25,30 @@ header{
 }
 
 #n-icon-menu{
+    position: absolute;
     float: right;
     display: none;
 }
 
 .n-menu{
+    /* margin: 03% 0%; */
     max-width: 100%;
     display: grid;
     grid-auto-flow: column;
-    margin: 30px;
+    padding: 0px;
     align-items: center;
 }
 
 .c-menu{
     max-height: 0;
-  opacity: 0;
-  transform: translateY(-0px);
-  overflow: hidden;
-  transition: max-height 0.6s ease, transform 0.6s ease, opacity 0.6s ease;
-  flex-direction: column;
-  pointer-events: none; 
+    opacity: 0;
+    transform: translateY(-30px);
+    overflow: hidden;
+    transition: max-height 0.6s ease, transform 0.6s ease, opacity 0.6s ease;
+    pointer-events: none; 
 }
 
-.c-menu.active {
+.c-menu.active{
     max-height: 500px; /* deve ser maior que a altura total do menu */
     opacity: 1;
     transform: translateY(0);
@@ -56,10 +57,12 @@ header{
 
 .n-links{
     font-family: "open sans", sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     list-style: none;
     display: grid;
     grid-auto-flow: column;
+    align-items: center;
+    cursor: pointer;
 }
 
 .n-links li:hover{
@@ -75,6 +78,7 @@ header{
     margin: 15px;
     max-width: 150px;
     min-height: 8vh;
+    cursor: pointer;
 }
 
 #bt-comecar:hover{
@@ -85,6 +89,7 @@ header{
 }
 
 @media (min-width: 768px) {
+    
   .c-menu {
     opacity: 1;
     max-height: 100%; 
@@ -96,7 +101,26 @@ header{
 }
 
 @media (max-width: 768px) {
-     #n-icon-menu{
+#n-icon-menu{
+    margin: 10% 05%;
     display: block;
-  }
+    position: relative;
+}
+.n-links{
+    margin: 0% 40%;
+    display: grid;
+    grid-auto-flow: row;
+}
+
+.n-menu{
+    position: absolute;
+    display: grid;
+    grid-auto-flow: row;
+}
+
+#bt-comecar{
+    margin: 2% 40%;
+    min-width:100px;
+    max-height:5vh ;
+}
 }
